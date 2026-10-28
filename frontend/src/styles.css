@@ -1,0 +1,65 @@
+:root {
+   /* Tipografías */
+    --font-heading: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Inter", Arial, sans-serif;
+
+    /* Escala tipográfica */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 3rem;
+
+   /* =========================
+     COLORES DE MARCA
+     ========================= */
+     --color-primary: #292622;
+     --color-secondary: #B7A99A;
+     --color-accent: #D8C5B2;
+   
+     /* =========================
+        FONDOS
+        ========================= */
+     --color-background: #FAF8F4;
+     --color-surface: #FFFFFF;
+     --color-surface-alt: #F0EBE4;
+   
+     /* =========================
+        TEXTOS
+        ========================= */
+     --color-text: #292622;
+     --color-text-secondary: #77716A;
+     --color-text-muted: #9B948C;
+     --color-text-inverse: #FFFFFF;
+   
+     /* =========================
+        BORDES
+        ========================= */
+     --color-border: #E5DED5;
+     --color-border-strong: #C8BDB0;
+   
+     /* =========================
+        ESTADOS
+        ========================= */
+     --color-success: #526B55;
+     --color-error: #A64740;
+     --color-warning: #A87835;
+     --color-info: #657B8C;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+  }
+
+
+  @import "magic.css/magic.min.css";

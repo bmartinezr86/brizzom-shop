@@ -1,0 +1,157 @@
+
+:host {
+    display: block;
+    min-height: 100vh;
+  }
+  
+  .home {
+    min-height: 100vh;
+    color: #252321;
+    background-color: #f8f6f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 5%;
+    background-color: #f8f6f2;
+    border-bottom: 1px solid #e8e3dc;
+  }
+  
+  .header__logo {
+    color: inherit;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+  }
+  
+  .header__nav,
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .header__nav a {
+    color: inherit;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .header__actions button {
+    padding: 0;
+    border: 0;
+    color: inherit;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  .hero {
+    display: flex;
+    min-height: 480px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+  
+  .hero__eyebrow,
+  .collection__eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+  }
+  
+  .hero h1 {
+    margin: 1rem 0;
+    font-family: Georgia, serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: normal;
+  }
+  
+  .hero__description {
+    color: #716b65;
+    line-height: 1.7;
+  }
+  
+  .hero__button {
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #252321;
+    text-decoration: none;
+  }
+  
+  .collection {
+    padding: 4rem 5%;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .collection h2 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .footer p,
+  .footer small {
+    color: #716b65;
+  }
+  
+  @media (max-width: 800px) {
+    .header {
+      flex-wrap: wrap;
+    }
+  
+    .header__nav {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .header__actions {
+      gap: 0.75rem;
+    }
+  
+    .hero {
+      min-height: 380px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      gap: 1rem;
+      padding: 1.25rem 4%;
+    }
+  
+    .header__logo {
+      font-size: 1.2rem;
+    }
+  
+    .header__actions {
+      font-size: 0.8rem;
+    }
+  
+    .header__nav {
+      gap: 1rem;
+      font-size: 0.85rem;
+    }
+  }
+  

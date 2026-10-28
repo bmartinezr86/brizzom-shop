@@ -1,0 +1,49 @@
+<header class="header">
+    <!-- Logotipo -->
+  <a class="header__logo" href="/" aria-label="Brizzom Shop - Inicio"> BRIZZOM </a>
+
+  
+  <!-- Boton hamburguesa-->
+  <button
+  class="hamburger hamburger--spring"
+  [class.is-active]="menuOpen"
+  type="button"
+  aria-label="Menú de navegación"
+  [attr.aria-expanded]="menuOpen"
+  (click)="toggleMenu()"
+>
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+  <!-- Navegacion  -->
+  <nav class="header__nav"
+  [class.header__nav--open]="menuOpen"
+  id="mobile-navigation"
+  aria-label="Navegación principal">
+    <a class="header__nav-link" href="#woman">Mujer</a>
+    <a class="header__nav-link" href="#men">Hombre</a>
+    <a class="header__nav-link" href="#news">Novedades</a>
+    <a class="header__nav-link" href="#collections">Colecciones</a>
+  </nav>
+
+   <!-- Acciones -->
+  <div class="header__actions">
+    <button class="icon-button" type="button" aria-label="Buscar">
+      <fa-icon class="icon" [icon]="faMagnifyingGlass"></fa-icon>
+    </button>
+    <button class="icon-button" type="button" aria-label="Favoritos">
+      <fa-icon class="icon icon-regular" [icon]="faHeartRegular" />
+      <fa-icon class="icon icon-solid" [icon]="faHeartSolid" />
+    </button>
+    <button class="icon-button" type="button" aria-label="Mi cuenta">
+      <fa-icon class="icon icon-regular" [icon]="faUserRegular" />
+      <fa-icon class="icon icon-solid" [icon]="faUserSolid" />
+    </button>
+    <button class="icon-button icon-button__cart" type="button" aria-label="Carrito">
+      <fa-icon class="icon icon__cart" [icon]="faBagShoppingSolid"></fa-icon> 
+      <span class="cart-count">0</span>
+    </button>
+  </div>
+</header>
