@@ -84,6 +84,10 @@
 
 /* Menu movil */
 
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 768px) {
   .header {
     position: relative;
@@ -140,6 +144,10 @@
   font-size: var(--text-xl);
   text-align: left;
   border-bottom: none;
+  }
+
+  .hamburger {
+    display: inline-block;
   }
 
   .hamburger-inner,
