@@ -29,3 +29,6 @@ Desktop.ini
 # Archivos temporales
 *.tmp
 *.swp
+
+# Configuración personal del editor
+**/.vscode/
