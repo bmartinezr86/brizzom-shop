@@ -1,0 +1,142 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background-secondary);
+  padding: 4% 2% 1%;
+  margin-top: auto;
+
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr auto;
+  gap: 2rem;
+  align-items: start;
+}
+
+.footer__logo {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  line-height: 1;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer__logo:hover {
+  color: var(--color-text-secondary);
+}
+
+.footer__navigation {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 300px));
+  justify-content: start;
+  gap: 2rem;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__title {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 550;
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--color-primary);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social__rrss {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: var(--text-2xl);
+}
+
+.social__link {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.social__link:hover {
+  color: var(--color-secondary);
+}
+
+.footer__extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__payments .payments__list {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-text-secondary);
+  padding-bottom: 2rem;
+}
+
+.payment__element {
+    transition: color 0.2s ease;
+}
+
+.payment__element:hover {
+    color: var(--color-primary);
+    cursor: default;
+  }
+  
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid var(--color-border-strong);
+  padding-top: 1rem;
+}
+
+.footer__legal .legal__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__copyright,
+.footer__legal {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+
+.legal__link {
+    transition: color 0.2s ease;
+  }
+  
+  .legal__link:hover {
+    color: var(--color-primary);
+  }
+
+  .footer {
+  }
